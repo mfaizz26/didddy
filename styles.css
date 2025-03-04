@@ -1,90 +1,52 @@
-@charset "utf-8";
-/* CSS Document */
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styling */
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
-    color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Header styling */
+/* Header Styling */
 header {
-    background-color: #333;
+    background-color: #d6001c;
     color: white;
-    padding: 20px;
+    padding: 15px;
     font-size: 24px;
-    text-transform: uppercase;
 }
 
-/* Section styling */
+/* Section Styling */
 section {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-/* Image styling */
-.main-image {
-    max-width: 100%;
+/* Image Styling */
+img {
+    width: 300px; 
     height: auto;
-    display: block;
-    margin: 20px auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.small-image {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 10px;
-}
-
-/* Link button styling */
-a {
-    display: inline-block;
+/* Paragraph Styling */
+p {
+    font-size: 18px;
     margin-top: 10px;
-    padding: 10px 15px;
-    background: #007BFF;
+}
+
+/* Button Styling */
+.learn-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #d6001c;
     color: white;
     text-decoration: none;
+    font-size: 16px;
     border-radius: 5px;
     transition: 0.3s;
 }
 
-a:hover {
-    background: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    section {
-        width: 95%;
-    }
-    
-    .small-image {
-        width: 80%;
-    }
-}
-.main-image {
-    width: 100%;  /* Make image responsive */
-    max-width: 600px; /* Set maximum size */
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 10px; /* Optional rounded corners */
+.learn-more:hover {
+    background-color: #a50014;
 }
