@@ -1,37 +1,89 @@
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header Styling */
 header {
-    background-color: #d71920;
+    background-color: #d6001c;
     color: white;
-    padding: 20px;
+    padding: 15px;
+    font-size: 26px;
+    font-weight: bold;
 }
 
-button {
-    background-color: #d71920;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+/* Intro Section */
+.intro {
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #a3161a;
+img {
+    width: 250px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.trophy {
+p {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+/* Button Styling */
+.learn-more {
     display: inline-block;
-    margin: 20px;
-    text-align: center;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #d6001c;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-footer {
-    margin-top: 30px;
+.learn-more:hover {
+    background-color: #a50014;
+}
+
+/* Achievements Section */
+.achievements {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.achievements h2 {
+    color: #d6001c;
+    font-size: 24px;
+}
+
+.achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements li {
+    font-size: 18px;
+    background-color: #f8f8f8;
+    margin: 5px auto;
     padding: 10px;
-    background-color: #222;
+    width: 60%;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover Effect for Achievements */
+.achievements li:hover {
+    background-color: #d6001c;
     color: white;
+    cursor: pointer;
 }
