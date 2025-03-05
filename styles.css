@@ -11,25 +11,24 @@ body {
 header {
     background-color: #d6001c;
     color: white;
-    padding: 15px;
+    padding: 20px;
     font-size: 24px;
 }
 
-/* Section Styling */
-section {
+/* Intro Section */
+.intro {
     margin-top: 20px;
+    padding: 20px;
 }
 
-/* Image Styling */
-img {
+.intro img {
     width: 300px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Paragraph Styling */
-p {
+.intro p {
     font-size: 18px;
     margin-top: 10px;
 }
@@ -49,4 +48,48 @@ p {
 
 .learn-more:hover {
     background-color: #a50014;
+}
+
+/* Achievements Section */
+.achievements {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.achievements h2 {
+    color: #d6001c;
+}
+
+.trophy-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.trophy {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 180px;
+}
+
+.trophy img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .trophy-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 }
